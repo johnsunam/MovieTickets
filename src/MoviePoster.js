@@ -14,12 +14,6 @@ import {
 
   export default class MoviePoster extends Component {
 
-
-    //   static propTypes ={
-    //       movie: PropTypes.object.isRequired,
-    //       onOpen: PropTypes.function.isRequired,
-    //   }
-
       render() {
         const { movie, movie: { title, genre, poster }, onOpen } = this.props;
           return(<TouchableOpacity style={styles.container} onPress={() => onOpen(movie)}>
